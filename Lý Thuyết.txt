@@ -11,3 +11,21 @@ Hướng duyệt của thuật toán xóa:
 Duyệt từ vị trí cần thêm tới n - 1, gán giá trị của phần tử hiện tại bằng giá trị phần tử
 đằng sau ==> Đè phần tử trước lên phần tử cần xóa, sau đó duyệt tiếp để lấy các phần tử đằng sau đó lần lượt đè lên phần tử đang duyệt
 Sau đó giảm n, nếu không 2 phần tử cuối sẽ trùng nhau
+4.
+void add(int a[], int &n, int x, int vt)
+{
+	for (int i = n;i>vt;i--)
+	{
+		a[i] = a[i - 1];
+	}
+	a[vt] = x;
+	n++;
+}
+void delete(int a[], int &n, int vt)
+{
+	for (int i = vt;i<n - 1;i++)
+	{
+		a[i] = a[i + 1];
+	}
+	n--;
+}
