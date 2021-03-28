@@ -1,0 +1,13 @@
+1. Mảng không thêm được khi đã đạt đến giới hạn về kích thước, vì là
+mảng tĩnh cho nên không thể thay đổi số lượng ô nhớ đã khởi tạo
+2. Mảng không xóa được khi trong mảng không có phần tử nào, tức là chỉ 
+khởi tạo vùng nhớ nhưng chưa gán giá trị cho nên không thể xóa phần tử
+3. 
+Hướng duyệt của thuật toán thêm: 
+Duyệt từ n đến vị trí cần thêm + 1, gán cho giá trị phần tử hiện tại bằng giá trị phần tử 
+đằng trước ==> dời vị trí, dời tới vị trí cần thêm + 1 thì dừng
+Sau đó tăng n lên, nếu không tăng n lên thì sẽ mất đi phần tử cuối
+Hướng duyệt của thuật toán xóa: 
+Duyệt từ vị trí cần thêm tới n - 1, gán giá trị của phần tử hiện tại bằng giá trị phần tử
+đằng sau ==> Đè phần tử trước lên phần tử cần xóa, sau đó duyệt tiếp để lấy các phần tử đằng sau đó lần lượt đè lên phần tử đang duyệt
+Sau đó giảm n, nếu không 2 phần tử cuối sẽ trùng nhau
