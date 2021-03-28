@@ -25,7 +25,7 @@ void Del(int a[], int &n, int pos) {
 	n--;
 }
 
-void process(int a[], int &n, int &count) {
+void process(int a[], int &n, int &count){
 	for (int i = 0; i < n; i++) {
 		if (isPalindrome(a[i])) {
 			Del(a, n, i);
